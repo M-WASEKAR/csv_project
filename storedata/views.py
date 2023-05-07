@@ -5,7 +5,7 @@ from .forms import CSVUploadForm
 from .models import CSVData
 import pandas as pd
 
-def upload_csv(request):
+def upload_csv(requestregister/):
     if request.method == 'POST':
         form = CSVUploadForm(request.POST, request.FILES)
         if form.is_valid():
